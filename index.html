@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta charset="utf-8"/>
+<script src="https://cdn.geogebra.org/apps/deployggb.js"></script>
+
+</head>
+<body>
+<div id="ggbApplet"></div>
+
+<script>
+var parameters = {
+"id": "ggbApplet",
+"width":1920,
+"height":873,
+"showMenuBar":true,
+"showAlgebraInput":true,
+"showToolBar":true,
+"customToolBar":"0 | 1 501 5 19 , 67 | 2 15 45 18 , 7 37 | 514 3 9 , 13 44 , 47 | 16 51 | 551 550 11 ,  20 22 21 23 , 55 56 57 , 12 | 69 | 510 511 , 512 513 | 533 531 , 534 532 , 522 523 , 537 536 , 535 | 521 520 | 36 , 38 49 560 | 571 30 29 570 31 33 | 17 | 540 40 41 42 , 27 28 35 , 6 , 502",
+"showToolBarHelp":true,
+"showResetIcon":false,
+"enableLabelDrags":false,
+"enableShiftDragZoom":true,
+"enableRightClick":false,
+"errorDialogsActive":false,
+"useBrowserForJS":false,
+"allowStyleBar":false,
+"preventFocus":false,
+"showZoomButtons":true,
+"capturingThreshold":3,
+// add code here to run when the applet starts
+"appletOnLoad":function(api){ /* api.evalCommand('Segment((1,2),(3,4))');*/ },
+"showFullscreenButton":true,
+"scale":1,
+"disableAutoScale":false,
+"allowUpscale":false,
+"clickToLoad":false,
+"appName":"3D",
+"showSuggestionButtons":true,
+"buttonRounding":0.7,
+"buttonShadows":false,
+"language":"fr",
+// use this instead of ggbBase64 to load a material from geogebra.org
+// "material_id":"RHYH3UQ8",
+// use this instead of ggbBase64 to load a .ggb file
+// "filename":"myfile.ggb",
+"ggbBase64":"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",
+};
+// is3D=is 3D applet using 3D view, AV=Algebra View, SV=Spreadsheet View, CV=CAS View, EV2=Graphics View 2, CP=Construction Protocol, PC=Probability Calculator DA=Data Analysis, FI=Function Inspector, macro=Macros
+var views = {'is3D': 1,'AV': 1,'SV': 0,'CV': 0,'EV2': 0,'CP': 0,'PC': 0,'DA': 0,'FI': 0,'macro': 0};
+var applet = new GGBApplet(parameters, '5.0', views);
+window.onload = function() {applet.inject('ggbApplet')};
+applet.setPreviewImage('data:image/gif;base64,R0lGODlhAQABAAAAADs=','https://www.geogebra.org/images/GeoGebra_loading.png','https://www.geogebra.org/images/applet_play.png');
+</script>
+</body>
+</html>
